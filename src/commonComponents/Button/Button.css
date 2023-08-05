@@ -1,0 +1,52 @@
+/* For Primary button */
+.primary {
+  background-color: #1b488b !important ;
+  color: #ffffff;
+  border-radius: 20px !important;
+  border: none !important;
+  display: flex;
+  align-items: center;
+}
+
+.primary:hover {
+  background-color: #2863bc !important;
+  color: #ffffff !important;
+}
+
+.secondary-button {
+  background-color: #ffffff !important ;
+  color: #1b488b;
+  border-radius: 20px !important;
+}
+
+.secondary-button:hover {
+  background-color: #ffffff !important;
+  color: #2863bc !important;
+  border-color: #2863bc;
+}
+
+/* For text button   */
+.text {
+  background-color: #ffffff !important ;
+  color: #ffffff !important;
+  border-radius: 3px !important;
+  border: none !important ;
+}
+
+.text:hover {
+  background-color: #ffffff !important ;
+  color: #2863bc !important;
+}
+/* For Link button   */
+.link {
+  background-color: #ffffff00 !important ;
+  color: #ffffff !important;
+  border-radius: 3px !important;
+  border: none !important ;
+  text-decoration: underline !important;
+}
+
+.link:hover {
+  background-color: #ffffff00 !important ;
+  color: #e8e8e8 !important;
+}
