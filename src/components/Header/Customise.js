@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import GenericButton from "../../commonComponents/Button/GenericButton";
 import { Modal } from "antd";
 import GenericForm from "../../commonComponents/Form/GenericForm";
 
 const Customise = () => {
   const [modal2Open, setModal2Open] = useState(false);
-  function openModal() {
-    console.log("dataaa");
-    setModal2Open(true);
-  }
+  // function openModal() {
+  //   console.log("dataaa");
+  //   setModal2Open(true);
+  // }
   return (
     <div>
       Customise App
