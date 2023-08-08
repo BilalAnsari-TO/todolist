@@ -3,15 +3,7 @@ import PropTypes from "prop-types";
 import { Button, Space } from "antd";
 import "./Button.css";
 
-const GenericButton = ({
-  size,
-  type,
-  icon,
-  disabled,
-  onClick,
-  className,
-  children,
-}) => {
+const GenericButton = ({ size, type, icon, onClick, className, children }) => {
   const handleClick = (e) => {
     if (onClick) {
       onClick(e);

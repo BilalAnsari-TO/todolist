@@ -6,6 +6,7 @@
   border: none !important;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .primary:hover {

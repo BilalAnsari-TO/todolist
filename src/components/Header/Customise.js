@@ -4,10 +4,7 @@ import GenericForm from "../../commonComponents/Form/GenericForm";
 
 const Customise = () => {
   const [modal2Open, setModal2Open] = useState(false);
-  // function openModal() {
-  //   console.log("dataaa");
-  //   setModal2Open(true);
-  // }
+
   return (
     <div>
       Customise App

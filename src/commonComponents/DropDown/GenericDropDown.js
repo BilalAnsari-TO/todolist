@@ -1,20 +1,13 @@
 import React from "react";
-import { Button, Dropdown, Space } from "antd";
-import { DownOutlined } from "@ant-design/icons";
-const items = [
-  {
-    key: "1",
-    label: "Edit",
-  },
-  {
-    key: "2",
-    label: "Delete",
-  },
-];
+import { Dropdown, Menu, Space } from "antd";
 
-const GenericDropDown = ({ icon, text }) => (
+const GenericDropDown = ({ icon, text, items, onClick }) => (
   <>
-    <Dropdown menu={{ items }} trigger={["click"]} placement="bottomRight">
+    <Dropdown
+      overlay={<Menu>{items}</Menu>}
+      trigger={["click"]}
+      placement="bottomRight"
+    >
       <a
         onClick={(e) => {
           e.preventDefault();

@@ -16,20 +16,22 @@ const Index = () => {
       seCardData(todoQuery.data);
     }
   }, [todoQuery]);
+  {
+  }
 
   if (todoQuery.isLoading) return <h1>isLoading...</h1>;
   if (todoQuery.status === "error") {
     return <h1>{JSON.stringify(todoQuery.error)}</h1>;
   }
 
-  console.log("data", todoQuery?.data);
   return (
     <>
       <div className="bg-slate-100	min-h-full rounded-lg m-5">
         <div className="flex gap-5 flex-wrap p-10 pt-5">
-          {cardData.map((data, id) => (
+          {cardData.map((data) => (
             <Card
-              key={id}
+              key={data.id}
+              id={data.id}
               priority={data.priority}
               description={data.description}
               title={data.title}
